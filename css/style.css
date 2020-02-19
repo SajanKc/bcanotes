@@ -1,0 +1,213 @@
+.main-body{
+	margin: 0 50px;
+	padding: 0;
+	font-size: 20px;
+	font-family: "Times New Roman";
+	background-color: limegreen;
+}
+
+.blankBox:before{
+	margin-top: 50px;
+	content: "";
+	display: block;
+	width:100%;
+	height: 5px;
+	background-color: #141414;
+}
+
+
+.navBar h1{
+	font-size: 40px;
+	margin-bottom: 0;
+	text-shadow: 1px 1px #FF0000;
+}
+
+/*drop down*/
+.navBar ul{
+	margin-top: 0;
+	float: right;
+}
+
+.navBar ul li {
+	list-style: none;
+	display: inline-block;
+	line-height: 50px;
+}
+
+.navBar ul li a {
+	font-size: 35px;
+	padding: 0 20px;
+	text-decoration: none;
+	color: black;
+	position: relative;
+}
+
+.navBar ul li a:hover{
+	text-shadow: 0 0 3px #FF0000;
+	/*color: red;*/
+}
+
+.navBar ul li ul {
+	display: none;
+	position: absolute;
+	background-color: green;
+	padding: 10px;
+	border-radius: 0px 0px 4px 4px;
+}
+
+.navBar ul li:hover ul {
+	display: block;
+	
+}
+
+.navBar ul li ul li {
+	display: grid;
+	width: auto;
+	border-radius: 4px;
+}
+
+.navBar ul li ul li a {
+	padding: 8px 14px;
+	font-size: 18px;
+}
+
+.navBar ul li ul li a:hover{
+	background-color: lightgreen;
+}
+
+/*drop down ended*/
+
+.home{
+	text-align: center;
+}
+
+.home h1{
+	margin-top: 160px;
+	text-shadow: 2px 2px #FF0000;
+}
+
+.home p{
+	
+}
+
+caption{
+	margin-bottom: 15px;
+}
+
+
+#firstSemester table {
+	width: 100%;
+}
+
+#firstSemester table tr td{
+	text-align: center;
+	padding: 20px;
+}
+
+#firstSemester table tr td a button{
+	width: 250px;
+	height: 50px;
+	font-weight: bold;
+}
+
+#secondSemester table {
+	width: 100%;
+}
+
+#secondSemester table tr td{
+	text-align: center;
+	padding: 20px;
+}
+
+#secondSemester table tr td a button{
+	width: 250px;
+	height: 50px;
+	font-weight: bold;
+}
+
+
+#thirdSemester table {
+	width: 100%;
+}
+
+#thirdSemester table tr td{
+	text-align: center;
+	padding: 20px;
+}
+
+#thirdSemester table tr td a button{
+	width: 250px;
+	height: 50px;
+	font-weight: bold;
+}
+
+
+.footerDiv table tr td a{
+	text-decoration: none;
+	color: black;
+	font-size: 1.5vw;
+}
+
+
+.footerDiv table tr td a:hover{
+	color: white;
+}
+
+
+
+table tr td a div img{
+	max-width: 250px;
+	max-height: 350px;
+}
+
+/*image hover effect*/
+.container {
+	position: relative;
+	width: 100%;
+}
+
+.overlay {
+	padding: 0 50px;
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: green;
+	opacity: 0.7;
+	overflow: hidden;
+	width: auto;
+	height:0;
+	transition: .5s ease;
+}
+
+.container:hover .overlay {
+	bottom: 0;
+	height: 100%;
+}
+
+.text {
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+/*imamge hover effect ended*/
+
+
+/*Responsive design*/
+.navBar .mainNav ul li a{
+	font-size: 2vw;
+}
+
+@media (max-width: 595px) {
+  .mainNav ul {
+    display: none;
+  }
+}
