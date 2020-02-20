@@ -86,59 +86,30 @@
 	text-shadow: 2px 2px #FF0000;
 }
 
-.home p{
-	
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+
+	/*background-color: DodgerBlue;*/
 }
 
-caption{
-	margin-bottom: 15px;
-}
-
-
-#firstSemester table {
-	width: 100%;
-}
-
-#firstSemester table tr td{
+.flex-container > div {
+	/*background-color: #f1f1f1;*/
+	width: 450px; /*auto*/
+	margin: 10px;
 	text-align: center;
-	padding: 20px;
-}
-
-#firstSemester table tr td a button{
-	width: 250px;
-	height: 50px;
-	font-weight: bold;
-}
-
-#secondSemester table {
-	width: 100%;
-}
-
-#secondSemester table tr td{
-	text-align: center;
-	padding: 20px;
-}
-
-#secondSemester table tr td a button{
-	width: 250px;
-	height: 50px;
-	font-weight: bold;
+	font-size: 30px;
 }
 
 
-#thirdSemester table {
-	width: 100%;
+.flex-container > div a img {
+	width: auto;
+	height: 400px;
 }
 
-#thirdSemester table tr td{
-	text-align: center;
-	padding: 20px;
-}
-
-#thirdSemester table tr td a button{
-	width: 250px;
-	height: 50px;
-	font-weight: bold;
+.flex-container > div h3{
+	font-size: 26px;
+	text-shadow: 2px 2px #FF0000;
 }
 
 
@@ -154,13 +125,8 @@ caption{
 }
 
 
-
-table tr td a div img{
-	max-width: 250px;
-	max-height: 350px;
-}
-
 /*image hover effect*/
+/*
 .container {
 	position: relative;
 	width: 100%;
@@ -197,7 +163,7 @@ table tr td a div img{
 	transform: translate(-50%, -50%);
 	text-align: center;
 }
-
+*/
 /*imamge hover effect ended*/
 
 
@@ -206,8 +172,52 @@ table tr td a div img{
 	font-size: 2vw;
 }
 
-@media (max-width: 595px) {
-  .mainNav ul {
-    display: none;
-  }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.flex-container > div a img {
+		width: auto;
+		height: 300px;
+	}
+
+	.flex-container > div h3{
+		font-size: 14px;
+	}
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.mainNav ul {
+		display: none;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.flex-container > div a img {
+		width: auto;
+		height: 400px;
+	}
+	.main-body{
+		margin: 0 10px;
+
+		/*background-color: DodgerBlue;*/
+	}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.main-body{
+		margin: 0 20px;
+	}
+
+	.flex-container > div a img {
+		width: 200px;
+		height: 250px;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
