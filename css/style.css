@@ -15,7 +15,6 @@
 	background-color: #141414;
 }
 
-
 .navBar h1{
 	font-size: 40px;
 	margin-bottom: 0;
@@ -112,13 +111,11 @@
 	text-shadow: 2px 2px #FF0000;
 }
 
-
 .footerDiv table tr td a{
 	text-decoration: none;
 	color: black;
 	font-size: 1.5vw;
 }
-
 
 .footerDiv table tr td a:hover{
 	color: white;
